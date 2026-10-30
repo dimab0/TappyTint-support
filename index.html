@@ -1,32 +1,64 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tappy Tint Support</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tappy Tint: a coloring book for small fingers</title>
+  <meta name="description" content="Tap, and color blooms across the page. 236 pictures, 32 crayons and 8 magic fills for iPhone and iPad. No ads, no in-app purchases, works offline.">
+  <meta property="og:title" content="Tappy Tint: Kids Coloring Book">
+  <meta property="og:description" content="236 tap-to-color pictures with magic crayons. No ads, no in-app purchases, works offline.">
+  <meta property="og:image" content="https://dimab0.github.io/TappyTint-support/img/share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-itunes-app" content="app-id=6759538560">
+  <link rel="icon" href="img/icon.png">
+  <style>
+    :root { --ink:#1f1a2e; --soft:#5d5670; --sky:#cdefff; --pink:#ff4fa3; --gold:#ffb300; --lip:#c97f00; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:ui-rounded,"SF Pro Rounded",system-ui,-apple-system,sans-serif; color:var(--ink);
+           background:linear-gradient(#7ed4ff,#ddf6ff 420px,#fff8e8 900px); }
+    main { max-width:1080px; margin:0 auto; padding:40px 16px 56px; }
+    .top { display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+    .top img { width:96px; height:96px; border-radius:22px; box-shadow:0 6px 0 rgba(0,0,0,.12); }
+    h1 { font-size:clamp(38px,7vw,68px); font-weight:900; margin:18px 0 6px; line-height:1.03; color:var(--pink);
+         -webkit-text-stroke:0; text-shadow:0 3px 0 #fff, 3px 0 0 #fff, -3px 0 0 #fff, 0 -3px 0 #fff, 0 6px 10px rgba(0,0,0,.18); }
+    .lede { font-size:clamp(19px,3vw,24px); max-width:680px; font-weight:600; margin:10px 0 22px; }
+    .btn { display:inline-block; background:var(--gold); color:var(--ink); font-weight:900; font-size:20px; padding:15px 28px;
+           border-radius:999px; text-decoration:none; box-shadow:0 5px 0 var(--lip); }
+    .btn:active { transform:translateY(3px); box-shadow:0 2px 0 var(--lip); }
+    .shots { display:flex; gap:16px; overflow-x:auto; padding:30px 2px 18px; scroll-snap-type:x mandatory; }
+    .shots img { height:520px; max-width:80vw; width:auto; border-radius:22px; box-shadow:0 10px 24px rgba(30,20,60,.2); scroll-snap-align:center; flex:none; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:22px; }
+    .card { background:#fff; border-radius:20px; padding:20px 22px; box-shadow:0 4px 0 rgba(0,0,0,.08); }
+    .card h2 { font-size:21px; margin:0 0 6px; font-weight:900; }
+    .card p { margin:0; color:var(--soft); font-size:17px; line-height:1.4; }
+    footer { margin-top:34px; color:var(--soft); font-size:15px; }
+    footer a { color:inherit; margin-right:14px; }
+    @media (max-width:520px) { .shots img { height:440px; } }
+  </style>
 </head>
 <body>
-  <main class="container">
-    <section class="card">
-      <h1>Tappy Tint Support</h1>
-      <p>Official support and legal documentation for the Tappy Tint iOS app.</p>
-
-      <nav class="nav">
-        <a href="support.html">Support</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-and-conditions.html">Terms & Conditions</a>
-        <a href="data-deletion.html">Data Deletion</a>
-      </nav>
-
-      <h2>App Store URLs</h2>
-      <ul class="kv">
-        <li><strong>Support URL:</strong> <a href="support.html">support.html</a></li>
-        <li><strong>Privacy Policy URL:</strong> <a href="privacy-policy.html">privacy-policy.html</a></li>
-      </ul>
-
-      <p class="footer">Last updated: March 1, 2026</p>
-    </section>
-  </main>
+<main>
+  <div class="top"><img src="img/icon.png" alt="Tappy Tint icon" width="96" height="96"></div>
+  <h1>Tap. Color. Wow!</h1>
+  <p class="lede">A coloring book made for small fingers. Touch a part of the picture and paint blooms out from their fingertip. No ads, nothing to buy inside, and no internet needed.</p>
+  <a class="btn" href="https://apps.apple.com/app/id6759538560">Get it on the App Store</a>
+  <div class="shots">
+    <img src="img/01-color.jpg" alt="A princess being colored in pink" loading="lazy">
+    <img src="img/02-worlds.jpg" alt="Five paper worlds of pictures" loading="lazy">
+    <img src="img/03-magic.jpg" alt="A fish filled with rainbow, glitter and ocean waves" loading="lazy">
+    <img src="img/04-tada.jpg" alt="A finished triceratops with three stars" loading="lazy">
+    <img src="img/05-wall.jpg" alt="The Art Wall of finished pictures" loading="lazy">
+    <img src="img/06-pictures.jpg" alt="Dinosaur pictures from easy to detailed" loading="lazy">
+    <img src="img/07-grownups.jpg" alt="The grown-ups area" loading="lazy">
+  </div>
+  <div class="cards">
+    <div class="card"><h2>236 pictures</h2><p>Animals, vehicles, dinosaurs, princesses and space, from simple shapes for toddlers to big scenes for older kids.</p></div>
+    <div class="card"><h2>Magic crayons</h2><p>32 crayons with a range of skin tones, plus rainbow, gold glitter, galaxy, candy stripes, polka dots, hearts, stars and ocean.</p></div>
+    <div class="card"><h2>Made for parents</h2><p>No ads, no tracking, no accounts. Works on planes and road trips. Settings and links sit behind a grown-ups gate.</p></div>
+  </div>
+  <footer>
+    <a href="support.html">Support</a><a href="privacy-policy.html">Privacy</a><a href="terms-and-conditions.html">Terms</a><a href="data-deletion.html">Data deletion</a>
+  </footer>
+</main>
 </body>
 </html>
